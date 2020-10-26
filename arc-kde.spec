@@ -1,11 +1,11 @@
 Name:           arc-kde
 Version:        20180614
-Release:        5%{?dist}
+Release:        1
 Summary:        Port of the popular GTK theme Arc for the Plasma 5 desktop
 
 License:        GPLv3 and CC-BY-SA
 URL:            https://github.com/PapirusDevelopmentTeam/arc-kde
-Source0:        %url/archive/%{version}/%{name}-%{version}.tar.gz
+Source0:        https://github.com/PapirusDevelopmentTeam/arc-kde/archive/%{version}/%{name}-%{version}.tar.gz
 
 BuildArch:      noarch
 
@@ -110,7 +110,7 @@ This package contains the Yakuake theme.
 
 
 %prep
-%autosetup
+%autosetup -p1
 
 cp wallpapers/Arc-Dark/LICENSE LICENSE-wallpapers
 
@@ -131,23 +131,19 @@ cp wallpapers/Arc-Dark/LICENSE LICENSE-wallpapers
 %{_datadir}/plasma/desktoptheme/Arc-Dark
 %{_datadir}/plasma/look-and-feel/com.github.varlesh.arc-dark
 
-
 %files decorations
 %license LICENSE
 %{_datadir}/aurorae/themes/Arc
 %{_datadir}/aurorae/themes/Arc-Dark
 
-
 %files konsole
 %license LICENSE
 %{_datadir}/konsole/*.colorscheme
-
 
 %files konversation
 %license LICENSE
 %{_datadir}/konversation/themes/papirus
 %{_datadir}/konversation/themes/papirus-dark
-
 
 %files kvantum
 %license LICENSE
@@ -155,31 +151,12 @@ cp wallpapers/Arc-Dark/LICENSE LICENSE-wallpapers
 %{_datadir}/Kvantum/ArcDark
 %{_datadir}/Kvantum/ArcDarker
 
-
 %files wallpapers
 %license LICENSE-wallpapers
 %{_datadir}/wallpapers/Arc
 %{_datadir}/wallpapers/Arc-Dark
 
-
 %files yakuake
 %license LICENSE
 %{_datadir}/yakuake/skins/arc
 %{_datadir}/yakuake/skins/arc-dark
-
-
-%changelog
-* Mon Jul 27 2020 Fedora Release Engineering <releng@fedoraproject.org> - 20180614-5
-- Rebuilt for https://fedoraproject.org/wiki/Fedora_33_Mass_Rebuild
-
-* Tue Jan 28 2020 Fedora Release Engineering <releng@fedoraproject.org> - 20180614-4
-- Rebuilt for https://fedoraproject.org/wiki/Fedora_32_Mass_Rebuild
-
-* Wed Jul 24 2019 Fedora Release Engineering <releng@fedoraproject.org> - 20180614-3
-- Rebuilt for https://fedoraproject.org/wiki/Fedora_31_Mass_Rebuild
-
-* Thu Jan 31 2019 Fedora Release Engineering <releng@fedoraproject.org> - 20180614-2
-- Rebuilt for https://fedoraproject.org/wiki/Fedora_30_Mass_Rebuild
-
-* Tue Oct 02 2018 Robert-André Mauchin <zebob.m@gmail.com> - 20180614-1
-- Initial release
