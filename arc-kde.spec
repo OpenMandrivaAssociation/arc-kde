@@ -40,7 +40,7 @@ In this package you'll find:
 Summary:    Arc-KDE Kvantum theme
 License:    GPLv3
 BuildArch:  noarch
-Requires:   kvantum
+Requires:   qt-theme-kvantum
 
 %description kvantum
 This is a port of the popular GTK theme Arc for Plasma 5 desktop with a few 
