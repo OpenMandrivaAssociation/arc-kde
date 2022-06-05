@@ -155,6 +155,7 @@ cp wallpapers/Arc-Dark/LICENSE LICENSE-wallpapers
 %license LICENSE-wallpapers
 %{_datadir}/wallpapers/Arc
 %{_datadir}/wallpapers/Arc-Dark
+%{_datadir}/wallpapers/Arc-Mountains
 
 %files yakuake
 %license LICENSE
