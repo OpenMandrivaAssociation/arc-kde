@@ -129,7 +129,7 @@ cp wallpapers/Arc-Dark/LICENSE LICENSE-wallpapers
 %{_datadir}/color-schemes/*.colors
 %{_datadir}/plasma/desktoptheme/Arc-Color
 %{_datadir}/plasma/desktoptheme/Arc-Dark
-%{_datadir}/plasma/look-and-feel/com.github.varlesh.arc-dark
+%{_datadir}/plasma/look-and-feel/
 
 %files decorations
 %license LICENSE
