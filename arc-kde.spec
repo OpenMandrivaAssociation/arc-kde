@@ -1,5 +1,5 @@
 Name:           arc-kde
-Version:        20220706
+Version:        20220810
 Release:        1
 Summary:        Port of the popular GTK theme Arc for the Plasma 5 desktop
 
